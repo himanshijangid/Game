@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+    background: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main{
+ width: 100%;
+ text-align: center;
+ margin: auto;
+ height: 83.5vh;
+}
+.header {
+    margin: 30px;
+    
+    padding: 20px;
+}
+#score{
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    margin-top: 20px;
+    
+    
+}
+#score p:first-child{
+    background-color: #40425fb0;
+    padding: 10px;
+    color: white;
+}
+#score p:last-child{
+    background-color: #23253a;
+    padding: 10px;
+    color: white;
+}
+.container{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    width: 90%;
+    margin: auto;
+    height: 75vh;
+  
+}
+button{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color:#c49a68;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    cursor: pointer;
+    
+}
+button:hover{
+   
+    font-size: 1rem;
+}
+
+h2{
+  margin-top: -20px;
+    padding: 20px;
+    font-size: 2rem;
+    
+}
+.choices{
+  
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 170px;
+   cursor: pointer;
+}
+.choices i {
+   font-size: 8rem;
+
+}
+
+
+.choices i:hover {
+    font-size: 10rem;
+    
+ }
+ .modal{
+    display: none;
+    position:fixed;
+    z-index: 1;
+    left: 25%;
+    top: 30%;
+    height: 50%;
+    width: 50%;
+    overflow: auto;
+    background-color: #23253a;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    border-radius: 20px;
+}
+
+.modal_content{
+    background: #fff;
+    text-align: center;
+    margin: 10% auto;
+    width: 350px;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name:modalopen ;
+    animation-duration: var(--modal-duration);
+}
+
+.modal_content h1{
+    margin-bottom: 1rem;
+}
+
+.modal_content p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+@keyframes modalopen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
