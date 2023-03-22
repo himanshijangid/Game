@@ -76,12 +76,13 @@ h2{
 }
 .choices i {
    font-size: 8rem;
-
+    color: #23253a;
 }
 
 
 .choices i:hover {
     font-size: 10rem;
+    color: #0d0e16;
     
  }
  .modal{
