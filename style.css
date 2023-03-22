@@ -100,13 +100,13 @@ h2{
 }
 
 .modal_content{
-    background: #fff;
+    color: #fff;
     text-align: center;
     margin: 10% auto;
-    width: 350px;
+   
     border-radius: 10px;
     padding: 3rem;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    
     animation-name:modalopen ;
     animation-duration: var(--modal-duration);
 }
