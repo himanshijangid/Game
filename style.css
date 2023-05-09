@@ -1,81 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-body{
+
+body {
     background: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.main{
- width: 100%;
- text-align: center;
- margin: auto;
- height: 83.5vh;
+.main {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 83.5vh;
 }
+
 .header {
     margin: 30px;
-    
+
     padding: 20px;
 }
-#score{
-   
+
+#score {
+
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
     margin-top: 20px;
-    
-    
+    font-size: 1.3rem;
+
+
 }
-#score p:first-child{
+
+#score p:first-child {
     background-color: #40425fb0;
     padding: 10px;
     color: white;
 }
-#score p:last-child{
+
+#score p:last-child {
     background-color: #23253a;
     padding: 10px;
     color: white;
 }
-.container{
+
+.container {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
     width: 90%;
     margin: auto;
     height: 75vh;
-  
+
 }
-button{
+
+button {
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
-    background-color:#c49a68;
+    background-color: #c49a68;
     width: 150px;
     height: 50px;
     font-weight: bold;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
     cursor: pointer;
     display: none;
-    
+
 }
-button:hover{
-   
+
+button:hover {
+
     font-size: 1rem;
 }
 
-h2{
-  margin-top: -20px;
+h2 {
+    margin-top: -20px;
     padding: 20px;
     font-size: 2rem;
-    
+
 }
-.choices{
-  
+
+.choices {
+
     margin: 20px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     height: 170px;
-   cursor: pointer;
+    cursor: pointer;
 }
+
 .choices i {
-   font-size: 8rem;
+   
     color: #23253a;
 }
 
@@ -83,15 +94,16 @@ h2{
 .choices i:hover {
     font-size: 10rem;
     color: #0d0e16;
-    
- }
- .modal{
+
+}
+
+.modal {
     display: none;
-    position:fixed;
+    position: fixed;
     z-index: 1;
     left: 25%;
-    top: 30%;
-    height: 50%;
+    top: 40%;
+    height: 45%;
     width: 50%;
     overflow: auto;
     background-color: #23253a;
@@ -99,38 +111,40 @@ h2{
     border-radius: 20px;
 }
 
-.modal_content{
+.modal_content {
     color: #fff;
     text-align: center;
     margin: 10% auto;
-   
+
     border-radius: 10px;
     padding: 3rem;
-    
-    animation-name:modalopen ;
+    animation-name: modalopen;
     animation-duration: var(--modal-duration);
 }
 
-.modal_content h1{
+.modal_content h1 {
     margin-bottom: 1rem;
 }
 
-.modal_content p{
+.modal_content p {
     font-size: 1.2rem;
     margin-top: 1rem;
 }
 
-@keyframes modalopen{
-    from{
+@keyframes modalopen {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
-.text-win{
-    color:green;
+
+.text-win {
+    color: green;
 }
-.text-lose{
-    color:red ;
+
+.text-lose {
+    color: red;
 }

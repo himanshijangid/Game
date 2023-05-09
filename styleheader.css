@@ -13,19 +13,29 @@
 
 body {
   font-family: sans-serif;
+  width: 100%;
  
+}
+.logo11{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.logo11 h1{
+  margin-left: 20px;
 }
 
 .logo {
-  color: rgb(249,228,138);
- 
+  color:rgb(249,228,138);
   font-size: 30px;
-  margin-left: -450px;
+  /* margin-left: -550px; */
 }
 
 .logo span {
   color:rgb(249,228,138);
 }
+
 .menu-bar {
   background-color: var(--color-black);
   height: 60px;
@@ -36,10 +46,7 @@ body {
   padding: 0 5%;
 
   position: relative;
-
- 
- 
-  padding: 20px 10px;}
+}
 
 .menu-bar ul {
   list-style: none;
@@ -49,7 +56,7 @@ body {
 
 .menu-bar ul li {
   /* width: 120px; */
-  padding: 10px 10px;
+  padding: 10px 30px;
   /* text-align: center; */
 
   position: relative;
@@ -57,14 +64,14 @@ body {
 
 .menu-bar ul li a {
   font-size: 20px;
-  color: rgb(249,228,138);
+  color:rgb(249,228,138);
   text-decoration: none;
-  float: left;
+
   transition: all 0.3s;
 }
 
 .menu-bar ul li a:hover {
-  color:white
+  color: white;
 }
 
 .fas {
@@ -76,7 +83,6 @@ body {
 /* dropdown menu style */
 .dropdown-menu {
   display: none;
- 
 }
 
 .menu-bar ul li:hover .dropdown-menu {
@@ -85,55 +91,42 @@ body {
   left: 0;
   top: 100%;
   background-color: var(--color-black);
- 
- 
 }
 
 .menu-bar ul li:hover .dropdown-menu ul {
   display: block;
   margin: 10px;
-  text-align: center;
-}
-
-.menu-bar ul li:hover .dropdown-menu ul li {
-  width: 200px;
-  padding: 20px;
-  text-align: center;
- 
-}
-
-
-@media (max-width: 1024px){
-  .menu-bar ul li a{
-    font-size: 0.8rem;
-    
-  }
 }
 
 .menu-bar ul li:hover .dropdown-menu ul li {
   width: 150px;
-  padding: 30px;
-  text-align: center;}
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+@media (max-width: 1024px){
+  .menu-bar ul li a{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 480px){
+  .menu-bar ul li a{
+    font-size: 0.8rem;
+  }
+}
 
 .logo-self{
   height: 80px;
   width: 80px;
-  margin: 50px;
 }
-
-
-@media screen and (max-width: 500px) {
-  .menu-bar ul li a{
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .menu-right {
-    float: none;
-  }
-}
-.menu-bar ul li:hover .dropdown-menu ul li {
-  
-  padding: 20px;
-  text-align: center;}
-
